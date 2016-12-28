@@ -21,6 +21,12 @@
   padding: 0 300px;
 }
 
+.container-portfolio {
+  text-align: center;
+  padding: 0 400px;
+}
+
+
 .margin-top-container {
   margin-top: 50px;
 }
@@ -66,6 +72,7 @@
   border-width: 2px;
   border-color: #ccc;
   border-radius: 50px;
+  border-style: solid;
   padding: 12px;
   text-align: center;
   width: 68px;
@@ -85,5 +92,25 @@ a {
 }
 
 a:hover {
-  color: black!important;
+  color: black;
+}
+
+.title-portfolio {
+  margin-bottom: 100px;
+}
+
+.box-portfolio > a {
+  font-size: 56px;
+  font-family: 'Maax', sans-serif;
+  font-weight: 500;
+  line-height: 72px;
+  margin: 10px;
+  padding: 25px;
+  border: solid 4px #000;
+  display: block;}
+
+.box-portfolio>a:hover {
+  color: white!important;
+  background-color: black;
+  text-decoration: none;
 }
