@@ -24,6 +24,7 @@
 .container-portfolio {
   text-align: center;
   padding: 0 400px;
+  border-top: 500px;
 }
 
 
@@ -64,6 +65,7 @@
   width: 500px;
   color: #000;
   text-align: center;
+  border-style: solid;
 }
 
 .custom-submit {
@@ -81,6 +83,12 @@
   text-align: center;
 }
 
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
 
 body {
   background-color: #f6f5f0!important;
@@ -104,38 +112,16 @@ a:hover {
   font-family: 'Maax', sans-serif;
   font-weight: 500;
   line-height: 72px;
-  margin: 10px;
-  padding: 25px;
-  border: solid 4px #000;
-  display: block;}
-
-.box-portfolio>a:hover {
-  color: white!important;
-  background-color: black;
-  text-decoration: none;
+  margin: 0 10px;
+  padding: 10px 25px;
+  display: block;
 }
+
+
 
 .home-button {
-  width: 50px;
-  height: 50px;
-  background-color: black;
+
   position: fixed;
-  right: 5%;
+  right: 48%;
   bottom: 5%;
-  border-radius: 50px;
-  text-align: center;
-
-
-
-}
-
-.home-button > a  {
-  top: 50px;
-  padding: 50px 12px 0px 12px ;
-}
-.home-button > a > i {
-
-  color: white;
-  font-size: 32px;
-
 }
