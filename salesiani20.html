@@ -9,7 +9,11 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
      <link rel="stylesheet" href="css/bootstrap-theme.min.css" >
      <link rel="stylesheet" href="css/bootstrap.css" >
-     <script src="jquery-3.1.1.min.js"></script>
+     <script src="js/jquery.js"></script>
+     <script src="js/jquery.main.js"></script>
+     <script src="js/jquery-3.1.1.min.js"></script>
+     <link rel="stylesheet" type="text/css" href="slick-1.6.0/slick/slick.css"/>
+     <link rel="stylesheet" type="text/css" href="slick-1.6.0/slick/slick-theme.css"/>
      <title>Collettivo gg | Small city, big stories</title>
    </head>
 
@@ -18,7 +22,7 @@
        <div class="row">
          <div class="col-md-6 col-sm-12 col-xs-12 align-left main-margin">
            <h4>PROJECT:</h4>
-           <h1 style="font-weight: 700;" class="underlined">Salesiani 2.0</h1>
+           <h1 style="font-weight: 700;" class="underlined">Contamination Lab <br/> & Salesiani 2.0</h1>
          </div>
          <div class="col-md-5 col-sm-12 col-xs-12 align-left main-margin">
            <ul style="category-list">
@@ -29,7 +33,12 @@
            </ul>
          </div>
          <div class="col-md-12 col-sm-12 col-xs-12 align-center main-margin">
-          <a href="#"><img src="portfolio/salesiani20/bag-salesiani20.png" alt="" class="carousel"></a>
+           <div class="single-item">
+             <div><img src="portfolio/salesiani20/bag-salesiani20.png" alt="" class="carousel"></div>
+             <div><img src="portfolio/salesiani20/flyer-salesiani20.png" alt="" class="carousel"></div>
+             <div><img src="portfolio/salesiani20/logo-asd.png" alt="" class="carousel"></div>
+             <div><img src="portfolio/salesiani20/logo-boom.png" alt="" class="carousel"></div>
+           </div>
          </div>
         <div class="row">
           <div class="col-md-12 col-sm-12 col-xs-12 align-left main-margin text-small-regular">
@@ -39,8 +48,11 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, <span style="backgroun
         </div>
         <div class="row">
           <div class="col-md-12">
-            <h1>Link:</h1>
-
+            <div class="button-container">
+              <div class="link-button">
+                <a href="http://www.salesiani20.it" target="_blank">Visit website</a>
+              </div>
+            </div>
           </div>
         </div>
         <div class="align-center text-small back-to-home-button">
@@ -49,7 +61,20 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, <span style="backgroun
        </div>
 
      </div>
-
+     <script type="text/javascript" src="slick-1.6.0/slick/slick.min.js"></script>
+     <script type="text/javascript">
+       $(document).ready(function(){
+         $('.single-item').slick({
+          dots: false,
+          fade: true,
+          cssEase: 'linear',
+          autoplay: true,
+          autoplaySpeed: 2000,
+          prevArrow: $('.prev'),
+          nextArrow: $('.next')
+         });
+       });
+     </script>
 
    </body>
 </html>

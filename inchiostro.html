@@ -9,7 +9,11 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
      <link rel="stylesheet" href="css/bootstrap-theme.min.css" >
      <link rel="stylesheet" href="css/bootstrap.css" >
-     <script src="jquery-3.1.1.min.js"></script>
+     <script src="js/jquery.js"></script>
+     <script src="js/jquery.main.js"></script>
+     <script src="js/jquery-3.1.1.min.js"></script>
+     <link rel="stylesheet" type="text/css" href="slick-1.6.0/slick/slick.css"/>
+     <link rel="stylesheet" type="text/css" href="slick-1.6.0/slick/slick-theme.css"/>
      <title>Collettivo gg | Small city, big stories</title>
    </head>
 
@@ -23,10 +27,17 @@
          <div class="col-md-5 col-sm-12 col-xs-12 align-left main-margin">
            <ul style="category-list">
              <li class="category-badge">Brand identity</li>
+             <li class="category-badge">Motion design</li>
+             <li class="category-badge">Web design</li>
+             <li class="category-badge">Event design</li>
+             <li class="category-badge">Photography</li>
            </ul>
          </div>
          <div class="col-md-12 col-sm-12 col-xs-12 align-center main-margin">
-          <a href="#"><img src="portfolio/scbs/rava_backstage_1.jpg" alt="" class="carousel"></a>
+           <div class="single-item">
+             <div><img src="portfolio/scbs/rava_backstage_1.jpg" alt="" class="carousel"></div>
+             <div><img src="portfolio/scbs/mantovani_backstage_1.jpg" alt="" class="carousel"></div>
+           </div>
          </div>
         <div class="row">
           <div class="col-md-12 col-sm-12 col-xs-12 align-left main-margin text-small-regular">
@@ -36,17 +47,31 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, <span style="backgroun
         </div>
         <div class="row">
           <div class="col-md-12">
-            <h1>Link:</h1>
-
+            <div class="button-container">
+              <div class="link-button">
+                <a href="http://www.inchiostro.salesiani20.it" target="_blank">Visit website</a>
+              </div>
+            </div>
           </div>
         </div>
         <div class="align-center text-small back-to-home-button">
           <a href="portfolio.html">BACK TO PORTFOLIO</a>
         </div>
        </div>
-
      </div>
-
-
+     <script type="text/javascript" src="slick-1.6.0/slick/slick.min.js"></script>
+     <script type="text/javascript">
+       $(document).ready(function(){
+         $('.single-item').slick({
+          dots: false,
+          fade: true,
+          cssEase: 'linear',
+          autoplay: true,
+          autoplaySpeed: 2000,
+          prevArrow: $('.prev'),
+          nextArrow: $('.next')
+         });
+       });
+     </script>
    </body>
 </html>
