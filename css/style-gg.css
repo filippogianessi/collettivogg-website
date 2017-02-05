@@ -67,6 +67,12 @@
   font-weight: 700;
 }
 
+.text-extra-small-regular {
+  font-size: 16px;
+  font-family: 'Maax', sans-serif;
+  font-weight: 300;
+}
+
 .underlined {
   text-decoration: underline;
 }
@@ -200,6 +206,10 @@ h1 {
 .category-list {
   display: inline-block;
 }
+
+ul {
+  padding: 0!important;
+}
 .category-badge {
   list-style: none!important;
   float: left;
@@ -270,24 +280,29 @@ a > img:hover {
   }
 
   .button-container {
-    text-align: center;
     margin: 25px 0;
   }
   .link-button {
     border: solid black 2px;
-    width: 300px;
+    width: 200px;
     display: inline-block;
-    padding: 10px;
+    padding: 20px;
     font-family: "Maax", sans-serif;
     font-size: 21px;
     font-weight: 500;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    transform: all 0.5s ease-out;
 
   }
   .link-button:hover {
     background-color: black;
     color: white!important;
     cursor: pointer;
-  }
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    transform: all 0.5s ease-out;
+}
   .link-button > a:hover {
     color: white!important;
   }
