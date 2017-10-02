@@ -1,6 +1,6 @@
 
 @media only screen and (max-width: 1400px) {
-  .contenitore {
+  .logo__container {
     text-align: center;
     padding: 0 200px;
   }
@@ -12,7 +12,7 @@
 }
 
 @media only screen and (max-width: 1000px) {
-  .contenitore {
+  .logo__container {
     text-align: center;
     padding: 0 100px;
   }
