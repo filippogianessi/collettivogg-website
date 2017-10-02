@@ -1,5 +1,6 @@
 .contact-us__container {
-
+  text-align: center;
+  margin: 120px 0 96px;
 }
 
 .logo__container {
@@ -8,4 +9,5 @@
 
 .bio__container {
   text-align: center;
+  margin: 0 96px;
 }
