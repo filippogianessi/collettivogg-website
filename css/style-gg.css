@@ -18,10 +18,13 @@ button:focus {
 
 body {
   background-color: #f6f5f0!important;
+  cursor: url('/Users/filippogianessi/Documents/Works/Ideato/SourceTree/collettivogg-website/img/custom-cursor.png'), auto;
+
 }
 
 a {
   color: black!important;
+	cursor: url('/Users/filippogianessi/Documents/Works/Ideato/SourceTree/collettivogg-website/img/link-cursor-up--y.png'), auto;
 }
 
 a:hover {

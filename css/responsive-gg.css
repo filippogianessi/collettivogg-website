@@ -1,26 +1,7 @@
 
-@media only screen and (max-width: 1400px) {
-  .logo__container {
-    text-align: center;
-    padding: 0 200px;
+@media only screen and (max-width: 1080px) {
+  .bio__text {
+    font-size: 2em;
   }
-  .container-small {
-    text-align: center;
-    margin-top: 100px;
-    padding: 0 150px;
-  }
-}
 
-@media only screen and (max-width: 1000px) {
-  .logo__container {
-    text-align: center;
-    padding: 0 100px;
-  }
-  .container-small {
-    text-align: center;
-    margin-top: 100px;
-    padding: 0 50px;
-  }
-  .text {
-    font-size: 3em;
 }

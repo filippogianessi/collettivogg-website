@@ -1,3 +1,9 @@
+.index__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .contact-us__container {
   text-align: center;
   margin: 120px 0 96px;
@@ -10,4 +16,59 @@
 .bio__container {
   text-align: center;
   margin: 0 96px;
+}
+
+.link-to-portfolio__container {
+  margin: 64px 0;
+}
+
+.bio__text {
+  font-size: 4em;
+  font-family: 'Maax', 'Muli',sans-serif;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+.contact-us__text {
+  font-size: 1.6em;
+  font-family: 'Maax', 'Muli',sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.marquee__container {
+  position: fixed;
+  width: inherit;
+  bottom: 0;
+  left: 0;
+  height: 55px;
+  overflow: hidden;
+  background-color: #f6f5f0!important;
+  border-top: 0.15em solid #000000;
+  z-index: 10000000;
+  width: 150%;
+  text-align: left;
+  padding: 8px;
+}
+
+.bottom-line__text {
+  margin-top: 8px;
+  font-size: 2em;
+  font-family: 'Maax', 'Muli',sans-serif;
+  font-weight: bold;
+
+}
+
+.marquee {
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.marquee__text {
+    padding-left: 100%;
+    animation: marquee 20s linear infinite;
+}
+@keyframes marquee {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(-250%, 0); }
 }
